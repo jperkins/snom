@@ -22,8 +22,8 @@ Or install it yourself as:
 snom = Snom.new('username', 'password')
 
 snow.check_device('mac_address')
-snow.register_device('mac_address')
-snow.deregister_device('mac_address')
+snow.register_device('mac_address', 'provisioning_url')
+snow.deregister_device('mac_address', 'provisioning_url')
 ```
 
 ## Contributing
