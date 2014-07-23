@@ -1,6 +1,6 @@
 # Snom
 
-TODO: Write a gem description
+Ruby client for the Snom service. Additional information for the [Snom API] [snom-api].
 
 ## Installation
 
@@ -18,7 +18,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+snom = Snom.new('username', 'password')
+
+snow.check_device('mac_address')
+snow.register_device('mac_address')
+snow.deregister_device('mac_address')
+```
 
 ## Contributing
 
@@ -27,3 +33,6 @@ TODO: Write usage instructions here
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+
+
+[snom-api]: http://wiki.snom.com/Features/Auto_Provisioning/Redirection/XMLRPC#redirect.deregisterPhoneList  "Snom API"
